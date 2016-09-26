@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		993D273E1D98AF0C00EF0323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D273D1D98AF0C00EF0323 /* AppDelegate.swift */; };
+		993D27401D98AF0C00EF0323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D273F1D98AF0C00EF0323 /* ViewController.swift */; };
+		993D27431D98AF0C00EF0323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993D27411D98AF0C00EF0323 /* Main.storyboard */; };
+		993D27451D98AF0C00EF0323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993D27441D98AF0C00EF0323 /* Assets.xcassets */; };
+		993D27481D98AF0C00EF0323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993D27461D98AF0C00EF0323 /* LaunchScreen.storyboard */; };
+		993D27531D98AF0C00EF0323 /* grattiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D27521D98AF0C00EF0323 /* grattiTests.swift */; };
+		993D275E1D98AF0D00EF0323 /* grattiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D275D1D98AF0D00EF0323 /* grattiUITests.swift */; };
+		99706ACD1D99920A00DE4848 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99706ACC1D99920A00DE4848 /* SettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		993D274F1D98AF0C00EF0323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993D27321D98AF0C00EF0323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 993D27391D98AF0C00EF0323;
+			remoteInfo = gratti;
+		};
+		993D275A1D98AF0D00EF0323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993D27321D98AF0C00EF0323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 993D27391D98AF0C00EF0323;
+			remoteInfo = gratti;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		993D273A1D98AF0C00EF0323 /* gratti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gratti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		993D273D1D98AF0C00EF0323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		993D273F1D98AF0C00EF0323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		993D27421D98AF0C00EF0323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		993D27441D98AF0C00EF0323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		993D27471D98AF0C00EF0323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		993D27491D98AF0C00EF0323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		993D274E1D98AF0C00EF0323 /* grattiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grattiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		993D27521D98AF0C00EF0323 /* grattiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grattiTests.swift; sourceTree = "<group>"; };
+		993D27541D98AF0D00EF0323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		993D27591D98AF0D00EF0323 /* grattiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grattiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		993D275D1D98AF0D00EF0323 /* grattiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grattiUITests.swift; sourceTree = "<group>"; };
+		993D275F1D98AF0D00EF0323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99706ACC1D99920A00DE4848 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		993D27371D98AF0C00EF0323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993D274B1D98AF0C00EF0323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993D27561D98AF0D00EF0323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		993D27311D98AF0C00EF0323 = {
+			isa = PBXGroup;
+			children = (
+				993D273C1D98AF0C00EF0323 /* gratti */,
+				993D27511D98AF0C00EF0323 /* grattiTests */,
+				993D275C1D98AF0D00EF0323 /* grattiUITests */,
+				993D273B1D98AF0C00EF0323 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		993D273B1D98AF0C00EF0323 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				993D273A1D98AF0C00EF0323 /* gratti.app */,
+				993D274E1D98AF0C00EF0323 /* grattiTests.xctest */,
+				993D27591D98AF0D00EF0323 /* grattiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		993D273C1D98AF0C00EF0323 /* gratti */ = {
+			isa = PBXGroup;
+			children = (
+				99706ACC1D99920A00DE4848 /* SettingsViewController.swift */,
+				993D273D1D98AF0C00EF0323 /* AppDelegate.swift */,
+				993D273F1D98AF0C00EF0323 /* ViewController.swift */,
+				993D27411D98AF0C00EF0323 /* Main.storyboard */,
+				993D27441D98AF0C00EF0323 /* Assets.xcassets */,
+				993D27461D98AF0C00EF0323 /* LaunchScreen.storyboard */,
+				993D27491D98AF0C00EF0323 /* Info.plist */,
+			);
+			path = gratti;
+			sourceTree = "<group>";
+		};
+		993D27511D98AF0C00EF0323 /* grattiTests */ = {
+			isa = PBXGroup;
+			children = (
+				993D27521D98AF0C00EF0323 /* grattiTests.swift */,
+				993D27541D98AF0D00EF0323 /* Info.plist */,
+			);
+			path = grattiTests;
+			sourceTree = "<group>";
+		};
+		993D275C1D98AF0D00EF0323 /* grattiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				993D275D1D98AF0D00EF0323 /* grattiUITests.swift */,
+				993D275F1D98AF0D00EF0323 /* Info.plist */,
+			);
+			path = grattiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		993D27391D98AF0C00EF0323 /* gratti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 993D27621D98AF0D00EF0323 /* Build configuration list for PBXNativeTarget "gratti" */;
+			buildPhases = (
+				993D27361D98AF0C00EF0323 /* Sources */,
+				993D27371D98AF0C00EF0323 /* Frameworks */,
+				993D27381D98AF0C00EF0323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gratti;
+			productName = gratti;
+			productReference = 993D273A1D98AF0C00EF0323 /* gratti.app */;
+			productType = "com.apple.product-type.application";
+		};
+		993D274D1D98AF0C00EF0323 /* grattiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 993D27651D98AF0D00EF0323 /* Build configuration list for PBXNativeTarget "grattiTests" */;
+			buildPhases = (
+				993D274A1D98AF0C00EF0323 /* Sources */,
+				993D274B1D98AF0C00EF0323 /* Frameworks */,
+				993D274C1D98AF0C00EF0323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				993D27501D98AF0C00EF0323 /* PBXTargetDependency */,
+			);
+			name = grattiTests;
+			productName = grattiTests;
+			productReference = 993D274E1D98AF0C00EF0323 /* grattiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		993D27581D98AF0D00EF0323 /* grattiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 993D27681D98AF0D00EF0323 /* Build configuration list for PBXNativeTarget "grattiUITests" */;
+			buildPhases = (
+				993D27551D98AF0D00EF0323 /* Sources */,
+				993D27561D98AF0D00EF0323 /* Frameworks */,
+				993D27571D98AF0D00EF0323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				993D275B1D98AF0D00EF0323 /* PBXTargetDependency */,
+			);
+			name = grattiUITests;
+			productName = grattiUITests;
+			productReference = 993D27591D98AF0D00EF0323 /* grattiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		993D27321D98AF0C00EF0323 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Singh, Jagdeep";
+				TargetAttributes = {
+					993D27391D98AF0C00EF0323 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					993D274D1D98AF0C00EF0323 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 993D27391D98AF0C00EF0323;
+					};
+					993D27581D98AF0D00EF0323 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 993D27391D98AF0C00EF0323;
+					};
+				};
+			};
+			buildConfigurationList = 993D27351D98AF0C00EF0323 /* Build configuration list for PBXProject "gratti" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 993D27311D98AF0C00EF0323;
+			productRefGroup = 993D273B1D98AF0C00EF0323 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				993D27391D98AF0C00EF0323 /* gratti */,
+				993D274D1D98AF0C00EF0323 /* grattiTests */,
+				993D27581D98AF0D00EF0323 /* grattiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		993D27381D98AF0C00EF0323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993D27481D98AF0C00EF0323 /* LaunchScreen.storyboard in Resources */,
+				993D27451D98AF0C00EF0323 /* Assets.xcassets in Resources */,
+				993D27431D98AF0C00EF0323 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993D274C1D98AF0C00EF0323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993D27571D98AF0D00EF0323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		993D27361D98AF0C00EF0323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993D27401D98AF0C00EF0323 /* ViewController.swift in Sources */,
+				993D273E1D98AF0C00EF0323 /* AppDelegate.swift in Sources */,
+				99706ACD1D99920A00DE4848 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993D274A1D98AF0C00EF0323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993D27531D98AF0C00EF0323 /* grattiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993D27551D98AF0D00EF0323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993D275E1D98AF0D00EF0323 /* grattiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		993D27501D98AF0C00EF0323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 993D27391D98AF0C00EF0323 /* gratti */;
+			targetProxy = 993D274F1D98AF0C00EF0323 /* PBXContainerItemProxy */;
+		};
+		993D275B1D98AF0D00EF0323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 993D27391D98AF0C00EF0323 /* gratti */;
+			targetProxy = 993D275A1D98AF0D00EF0323 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		993D27411D98AF0C00EF0323 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				993D27421D98AF0C00EF0323 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		993D27461D98AF0C00EF0323 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				993D27471D98AF0C00EF0323 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		993D27601D98AF0D00EF0323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		993D27611D98AF0D00EF0323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		993D27631D98AF0D00EF0323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = gratti/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jagdeep.gratti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		993D27641D98AF0D00EF0323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = gratti/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jagdeep.gratti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		993D27661D98AF0D00EF0323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = grattiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jagdeep.grattiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gratti.app/gratti";
+			};
+			name = Debug;
+		};
+		993D27671D98AF0D00EF0323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = grattiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jagdeep.grattiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gratti.app/gratti";
+			};
+			name = Release;
+		};
+		993D27691D98AF0D00EF0323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = grattiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jagdeep.grattiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = gratti;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		993D276A1D98AF0D00EF0323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = grattiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jagdeep.grattiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = gratti;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		993D27351D98AF0C00EF0323 /* Build configuration list for PBXProject "gratti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				993D27601D98AF0D00EF0323 /* Debug */,
+				993D27611D98AF0D00EF0323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		993D27621D98AF0D00EF0323 /* Build configuration list for PBXNativeTarget "gratti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				993D27631D98AF0D00EF0323 /* Debug */,
+				993D27641D98AF0D00EF0323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		993D27651D98AF0D00EF0323 /* Build configuration list for PBXNativeTarget "grattiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				993D27661D98AF0D00EF0323 /* Debug */,
+				993D27671D98AF0D00EF0323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		993D27681D98AF0D00EF0323 /* Build configuration list for PBXNativeTarget "grattiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				993D27691D98AF0D00EF0323 /* Debug */,
+				993D276A1D98AF0D00EF0323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 993D27321D98AF0C00EF0323 /* Project object */;
+}
