@@ -18,7 +18,7 @@ Here's a walkthrough of implemented user stories:
 
 http://imgur.com/GTeaxMy
 
-<img src=“grattiWalkThrough/Gratti.gif” title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src=“https://github.com/jagdeeparora86/gratti/blob/master/grattiWalkThrough/Gratti.gif” title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
