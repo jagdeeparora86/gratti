@@ -20,6 +20,7 @@ http://imgur.com/GTeaxMy
 
 <img src=“grattiWalkThrough/Gratti.gif” title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
