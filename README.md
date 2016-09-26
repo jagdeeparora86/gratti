@@ -9,8 +9,8 @@ Time spent: **4** hours spent in total
 
 The following **required** functionality is complete:
 
-* [] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [ ] Settings page to change the default tip percentage.
+* User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* Settings page to change the default tip percentage.
 
 ## Video Walkthrough 
 
@@ -18,7 +18,7 @@ Here's a walkthrough of implemented user stories:
 
 http://imgur.com/GTeaxMy
 
-<img src=“http://imgur.com/GTeaxMy” title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src=“grattiWalkThrough/Gratti.gif” title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
