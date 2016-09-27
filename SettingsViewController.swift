@@ -30,10 +30,11 @@ class SettingsViewController: UIViewController {
     @IBAction func updateDefaultTip(sender: AnyObject) {
         
         defaults.setInteger(defaultTipSegment.selectedSegmentIndex, forKey: "defaultTip")
+        defaults.synchronize();
         
     }
 
-    
+   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
