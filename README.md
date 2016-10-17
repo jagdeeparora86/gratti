@@ -26,7 +26,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/jagdeeparora86/gratti/blob/master/GrattiWalkThrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="https://github.com/jagdeeparora86/gratti/raw/master/Gratti.gif" title="Video Walkthrough" width="" alt="Video Walkthrough" style="max-width:100%;">
+
 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
