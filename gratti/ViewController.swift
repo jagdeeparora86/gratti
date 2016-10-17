@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
-    let defaults = NSUserDefaults.standardUserDefaults();
-    let currencyFormatter = NSNumberFormatter()
+    let defaults = UserDefaults.standard;
+    let currencyFormatter = NumberFormatter()
     
     
     override func viewDidLoad() {
@@ -24,26 +24,28 @@ class ViewController: UIViewController {
         billField.becomeFirstResponder()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setDefualtTip();
         setObservers();
     }
     
-    @IBAction func onTap(sender: AnyObject) {
+    @IBAction func onTap(_ sender: AnyObject) {
         view.endEditing(true);
         
     }
     
-    @IBAction func calculateTip(sender: AnyObject) {
+    @IBAction func calculateTip(_ sender: AnyObject) {
         
         let tipPercent = [0.15, 0.18, 0.20];
         let bill = Double(billField.text!) ?? 0.0;
         let tip = bill * tipPercent[tipControl.selectedSegmentIndex];
         let total = bill + tip;
-        currencyFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle;
-        tipLabel.text = currencyFormatter.stringFromNumber(tip);
-        totalLabel.text = currencyFormatter.stringFromNumber(total)
+        currencyFormatter.numberStyle = NumberFormatter.Style.currency;
+        currencyFormatter.locale = Locale.current
+        tipLabel.text = currencyFormatter.string(from: NSNumber(value: tip));
+        currencyFormatter.string(from: NSNumber(value: tip))
+        totalLabel.text = currencyFormatter.string(from: NSNumber(value: total))
         
     }
     
@@ -53,26 +55,26 @@ class ViewController: UIViewController {
     }
     
     func setDefualtTip(){
-        if(defaults.objectForKey("defaultTip") != nil){
-            tipControl.selectedSegmentIndex = defaults.integerForKey("defaultTip");
+        if(defaults.object(forKey: "defaultTip") != nil){
+            tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip");
             calculateTip(tipControl);
         }
     }
     
-     func applicationBecameActive(notification: NSNotification){
+     func applicationBecameActive(_ notification: Notification){
         print("inside application became active")
-        if(defaults.objectForKey("previousAccess") != nil)
+        if(defaults.object(forKey: "previousAccess") != nil)
         {
             print("previousAccess is there");
-            let pt = defaults.objectForKey("previousAccess") as! NSDate
-            let interval = NSInteger(NSDate().timeIntervalSinceDate(pt))
+            let pt = defaults.object(forKey: "previousAccess") as! Date
+            let interval = NSInteger(Date().timeIntervalSince(pt))
             let minutes = (interval / 60) % 60
             print(" INTERVAL IS" )
             print(minutes)
             if(minutes < 2)
             {
-                billField.text = (defaults.objectForKey("lastBillAmount") as! String)
-                tipControl.selectedSegmentIndex = defaults.integerForKey("lastTip")
+                billField.text = (defaults.object(forKey: "lastBillAmount") as! String)
+                tipControl.selectedSegmentIndex = defaults.integer(forKey: "lastTip")
                 calculateTip(tipControl)
             }
             else
@@ -84,13 +86,13 @@ class ViewController: UIViewController {
         
     }
     
-    func applicationBecameInActive(notification: NSNotification){
+    func applicationBecameInActive(_ notification: Notification){
         print("APP IS NOW IN BACKGROUND")
-        defaults.setObject(NSDate(), forKey: "previousAccess")
+        defaults.set(Date(), forKey: "previousAccess")
         print(billField.text)
         
-        defaults.setObject(billField.text, forKey: "lastBillAmount")
-        defaults.setInteger(tipControl.selectedSegmentIndex, forKey: "lastTip")
+        defaults.set(billField.text, forKey: "lastBillAmount")
+        defaults.set(tipControl.selectedSegmentIndex, forKey: "lastTip")
         
     }
     
@@ -100,16 +102,16 @@ class ViewController: UIViewController {
         
         
         let delayInSeconds = 0.5
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delayInSeconds * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) { () -> Void in
+        let delayTime = DispatchTime.now() + Double(Int64(delayInSeconds * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: delayTime) { () -> Void in
             self.initialNotificationReceiver()
         }
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("applicationBecameInActive:"), name: UIApplicationWillResignActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.applicationBecameInActive(_:)), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
 
     }
     
     func initialNotificationReceiver(){
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "applicationBecameActive:", name: UIApplicationDidBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.applicationBecameActive(_:)), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
     }
 
 }

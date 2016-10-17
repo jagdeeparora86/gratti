@@ -11,7 +11,7 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var defaultTipSegment: UISegmentedControl!
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,17 +19,17 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if(defaults.objectForKey("defaultTip") != nil){
-            defaultTipSegment.selectedSegmentIndex = defaults.integerForKey("defaultTip")
+        if(defaults.object(forKey: "defaultTip") != nil){
+            defaultTipSegment.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
         }
 
     }
-    @IBAction func updateDefaultTip(sender: AnyObject) {
+    @IBAction func updateDefaultTip(_ sender: AnyObject) {
         
-        defaults.setInteger(defaultTipSegment.selectedSegmentIndex, forKey: "defaultTip")
+        defaults.set(defaultTipSegment.selectedSegmentIndex, forKey: "defaultTip")
         defaults.synchronize();
         
     }
